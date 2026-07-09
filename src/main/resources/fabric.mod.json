@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "commandcooldown",
+  "version": "${version}",
+  "name": "CommandCooldown",
+  "description": "Memberikan cooldown yang dapat dikonfigurasi untuk command apa pun yang didaftarkan melalui Brigadier, termasuk command dari mod lain.",
+  "authors": [
+    "fadlanmuzaini1"
+  ],
+  "contact": {
+    "homepage": "https://github.com/fadlanmuzaini1/CommandCooldown",
+    "sources": "https://github.com/fadlanmuzaini1/CommandCooldown"
+  },
+  "license": "MIT",
+  "environment": "server",
+  "entrypoints": {
+    "main": [
+      "io.github.fadlanmuzaini1.commandcooldown.CommandCooldownMod"
+    ]
+  },
+  "mixins": [
+    "commandcooldown.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.18.4",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
